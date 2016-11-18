@@ -26,13 +26,17 @@ module.exports = {
             { test: require.resolve('materialize-css'), loader: 'exports?Materialize' },
             {
                 test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=8192&name=[path][name].[ext]'
+                loader: 'url?limit=8192&name=js/[name].[ext]'
             },
-            //{ test: /\.js$/, loader: 'babel' },
+            { test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                loader: 'babel',
+                query: {
+                    presets: ['es2015']
+                }
+            }
         ]
     },
     resolve: {
-        root: __dirname,
-        extensions: [ '', '.js' ]
     }
 }
