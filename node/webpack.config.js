@@ -33,6 +33,9 @@ module.exports = {
             test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
             loader: 'url?limit=8192&name=[ext]/[name].[ext]'
         }, {
+            test: /\.json$/,
+            loaders: 'json'
+        }, {
             test: /\.js$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'babel',
