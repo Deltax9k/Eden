@@ -3,8 +3,8 @@ module.exports = {
 	directive: () => {
 		return {
 			restrict: 'E',
-      replace: true,
-      template: require('./searchBar.html')
+			replace: true,
+			template: require('./SearchBar.html')
 		}
 	}
 }
