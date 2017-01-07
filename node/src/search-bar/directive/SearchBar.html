@@ -1,14 +1,47 @@
 <div class="input-field col s12">
-	<a class="btn-floating btn-large waves-effect waves-light red left">
-    <i class="fa fa-star"></i>
-  </a>
-  <a class="btn-floating btn-large waves-effect waves-light red right">
-    <i class="fa fa-search"></i>
-  </a>
-  <center>
-    <input type="text"
-      class="validate right center-align"
-      style="width: 80%; margin-left: 0; margin-right: 0;" 
-      placeholder="搜索书签内容或添加书签">
-  </center>
+	<div class="col s2">
+    <a class="btn-floating btn-large waves-effect waves-light red left">
+      <i class="fa fa-star"></i>
+    </a>
+  </div>
+  <div class="col s8">
+    <input type="text" class="center-align"
+      style="margin-left: 0; margin-right: 0; margin-bottom: 0px;" 
+      placeholder="搜索书签内容或添加书签"
+      ng-model="hints"
+      ng-click="showDropdown(hints)">
+    <div class="col s12" ng-show="showTips">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header">
+            <span class="new badge" data-badge-caption="JAVA"></span>
+            <span class="new badge" data-badge-caption="微服务"></span>
+            <i class="fa fa-fire"></i>微服务：Java EE的掘墓人
+          </div>
+          <div class="collapsible-body">
+            <p>
+              在Java问世之初，包括IBM、BEA、Oracle在内的一些巨头公司看到了Java作为一门杰出的Web编程语言可能给他们带来的巨大商机。
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="new badge" data-badge-caption="JAVA"></span>
+            <span class="new badge" data-badge-caption="SCALA"></span>
+            <i class="fa fa-flag"></i>Java 8 vs. Scala之Lambda表达式
+            </div>
+          <div class="collapsible-body">
+            <p>
+              2014年3月份众人期待已久的Java 8发布了，新版本从语言、编译器、类库和工具等方面对Java进行了诸多改进与提升，一时间风光无限；而JVM体系的另一门语言Scala则因为融合了函数式编程语言与面向对象编程语言的优点，从诞生以来就一直备受瞩目，迅速赢得了社区的强烈支持。
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col s2">
+    <a class="btn-floating btn-large waves-effect waves-light red right">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 </div>
