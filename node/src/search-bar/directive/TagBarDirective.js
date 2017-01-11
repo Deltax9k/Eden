@@ -9,7 +9,9 @@ app.directive('tagBar', () => {
         $('.button-collapse').sideNav()
       },
       controller: ($scope) => {
-        
+        $scope.tags = [
+          'JAVA', 'C++', 'SCALA', "RUST"
+        ]
       }
     }
 })

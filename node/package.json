@@ -41,6 +41,9 @@
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.1",
     "font-awesome": "^4.7.0",
-    "materialize-css": "^0.97.8"
+    "materialize-css": "^0.97.8",
+    "velocity": "^0.7.2",
+    "velocity-animate": "^1.4.0",
+    "velocityjs": "^0.9.3"
   }
 }
