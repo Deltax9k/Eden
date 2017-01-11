@@ -1,6 +1,7 @@
 <div class="input-field col s12">
 	<div class="col s2">
-    <a class="btn-floating btn-large waves-effect waves-light red left">
+    <a class="btn-floating btn-large waves-effect waves-light red left"
+      ng-click="OpenSideBar()">
       <i class="fa fa-star"></i>
     </a>
   </div>
@@ -10,7 +11,8 @@
       placeholder="搜索书签内容或添加书签"
       ng-model="hints"
       ng-click="showDropdown(hints)">
-    <div class="col s12" ng-show="showTips">
+    <div class="col s12" ng-show="showTips"
+      style="padding-left: 0; padding-right: 0">
       <ul class="collapsible" data-collapsible="accordion">
         <li>
           <div class="collapsible-header">

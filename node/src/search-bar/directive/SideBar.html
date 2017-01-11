@@ -1,0 +1,19 @@
+<div>
+	<ul id="slide-out" class="side-nav">
+    <div class="col s6">
+    	<a ng-repeat="tag in tags"
+      	class="waves-effect waves-teal btn-flat col s2">
+      	{{tag}}
+    	</a>
+    </div>
+    <div class="col s6">
+    	<a ng-repeat="tag in tags"
+      	class="waves-effect waves-teal btn-flat col s2">
+      	{{tag}}
+    	</a>
+    </div>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"
+  	id="{{btnName}}" ng-hide="true">
+  </a>
+</div>
